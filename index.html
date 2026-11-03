@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gosto Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <h1>Gosto Restaurant</h1>
+        <nav>
+            <a href="#about">عن المطعم</a>
+            <a href="#menu">المنيو</a>
+            <a href="#offers">العروض</a>
+            <a href="#booking">احجز</a>
+            <a href="#reviews">التعليقات</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <!-- الصورة الكبيرة -->
+    <div class="hero">
+        <h2>أهلا بيك في مطعم Gosto</h2>
+        <p>سلطات ومكرونة وبيتزا طازجة</p>
+        <a href="#menu" class="btn">شوف المنيو</a>
+    </div>
+
+    <!-- عن المطعم -->
+    <section id="about">
+        <h2>معلومات عن المطعم</h2>
+        <p>المطعم هو عمل يقوم بتحضير وتقديم الطعام والمشروبات للعملاء. يتم تقديم الوجبات عادةً وتناولها في المكان، ولكن العديد من المطاعم توفر أيضًا خدمات التوصيل أو الطعام الجاهز.</p>
+    </section>
+
+    <!-- المنيو -->
+    <section id="menu">
+        <h2>القائمة</h2>
+        <div class="menu-grid">
+
+        <div class="box">
+            <h3>🥗 السلطات</h3>
+            <img src="imgs/o.jpeg" alt="Salads">
+            <ul>
+                <li>سلطة دجاج قيصر</li>
+                <li>سلطة يونانية</li>
+                <li>سلطة أفوكادو</li>
+                <li>سلطة تاكو</li>
+                <li>سلطة شيف</li>
+                <li>سلطة روكا</li>
+                <li>سلطة سلمون</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3>🍝 المكرونة</h3>
+            <img src="imgs/s.jpeg" alt="Pasta">
+            <ul>
+                <li>مكرونة دجاج ألفريدو</li>
+                <li>بولونيز</li>
+                <li>لازانيا</li>
+                <li>مكرونة روبيان</li>
+                <li>بيف ستروجانوف</li>
+                <li>مكرونة بنّا أرابيتا</li>
+                <li>مكرونة دجاج بيستو</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3>🍕 البيتزا</h3>
+            <img src="imgs/e.jpeg" alt="Pizza">
+            <ul>
+                <li>بيتزا بالروبيان</li>
+                <li>بيتزا مارغريتا</li>
+                <li>بيتزا نباتية</li>
+                <li>بيتزا بيبروني</li>
+                <li>بيتزا تونا</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <!-- العروض -->
+    <section id="offers">
+        <h2>🔥 العروض</h2>
+        <p class="offer">عرض خاص: اثنين بيتزا والتالتة هدية! اثنين بيتزا بـ 200 جنيه.</p>
+    </section>
+
+    <!-- الحجز -->
+    <section id="booking">
+        <h2>📅 احجز طاولتك</h2>
+        <form action="mailto:GostoRestaurant@gmail.com" method="post" enctype="text/plain">
+            <label>الاسم:</label>
+            <input type="text" name="name" required>
+
+            <label>رقم الموبايل:</label>
+            <input type="tel" name="phone" required>
+
+            <label>التاريخ:</label>
+            <input type="date" name="date" required>
+
+            <label>الوقت:</label>
+            <input type="time" name="time" required>
+
+            <label>عدد الأفراد:</label>
+            <input type="number" name="guests" min="1" required>
+
+            <button type="submit">ارسل الحجز</button>
+        </form>
+    </section>
+
+    <!-- التعليقات -->
+    <section id="reviews">
+        <h2>💬 تعليقات الضيوف</h2>
+        <p>اترك رأيك هنا لتطوير خدماتنا، أو لو عندك وصفة لذيذة شاركها معانا. شكراً.</p>
+        <form action="mailto:GostoRestaurant@gmail.com" method="post" enctype="text/plain">
+            <label>الاسم:</label>
+            <input type="text" name="name" required>
+
+            <label>التقييم:</label>
+            <select name="rating">
+                <option>5 نجوم</option>
+                <option>4 نجوم</option>
+                <option>3 نجوم</option>
+                <option>2 نجمة</option>
+                <option>1 نجمة</option>
+            </select>
+
+            <label>تعليقك:</label>
+            <textarea name="comment" rows="4" required></textarea>
+
+            <button type="submit">ارسل التعليق</button>
+        </form>
+    </section>
+
+    <!-- اتصل بنا -->
+    <section id="contact">
+        <h2>📞 اتصل بنا</h2>
+        <p>العنوان: أوستياني 62</p>
+        <p>الهاتف: <a href="tel:01001471931">01001471931</a></p>
+        <p>البريد الإلكتروني: <a href="mailto:GostoRestaurant@gmail.com">GostoRestaurant@gmail.com</a></p>
+        <a href="https://wa.me/201001471931" class="btn">كلمنا على واتساب</a>
+    </section>
+
+
+
+</body>
+
+</html>
